@@ -11,6 +11,10 @@ import java.awt.event.*;
  */ 
 public class ReportFrame extends JFrame
 {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 6526502343005056018L;
 	private JMenuItem printItem, stockItem;
 	private JMenu menu;
 	private JMenuBar menuBar;
@@ -18,10 +22,10 @@ public class ReportFrame extends JFrame
 	private JPanel myPanel;
 	
 	/**
-	 * Adds the specified panel to the frame nad displays the frame.
+	 * Adds the specified panel to the frame and displays the frame.
 	 * Also creates a <@link MenuBar> with two options.
 	 *
-	 * @param myPanel The panel to be diplayed in this frame
+	 * @param myPanel The panel to be displayed in this frame
 	 */
 	public ReportFrame (JPanel myPanel)
 	{
@@ -45,7 +49,7 @@ public class ReportFrame extends JFrame
 		menu.addSeparator();
 		menu.add (stockItem);
 		
-		getContentPane().add (myPanel);			
+		getContentPane().add (this.myPanel);			
 	}
 
 	/**

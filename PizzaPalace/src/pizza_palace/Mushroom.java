@@ -3,8 +3,6 @@ package pizza_palace;
  * Mushroom.java		07/12/2003
  * Author: Patrick Nutt
  */
-import javax.swing.*;
-import java.awt.*;
 import java.io.Serializable;
  
 /**
@@ -13,6 +11,11 @@ import java.io.Serializable;
  public class Mushroom extends Consumable implements Serializable
  { 	
  	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 8854848728555970043L;
+
+	/**
  	 * Creates a new <code>Mushroom</code> object and sets its constant
  	 * values
  	 *

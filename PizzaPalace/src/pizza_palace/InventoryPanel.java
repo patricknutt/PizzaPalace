@@ -11,7 +11,7 @@ package pizza_palace;
  import java.io.*; 
  
  /**
-  * This class represents an invetory report selection GUI
+  * This class represents an inventory report selection GUI
   * Three choices are available:
   * 	Inventory Report
   * 	Stock Comparison Chart
@@ -24,6 +24,11 @@ package pizza_palace;
  public class InventoryPanel extends JPanel
  {
  	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -4895098287191528434L;
+
+	/**
  	 * Three buttons for selecting the desired report
  	 */
  	private JButton invReportButton, stockChartButton, 
@@ -93,7 +98,7 @@ package pizza_palace;
 	 	String title;
 	 	
 	 	/**
-	 	* Creates a new <code>JPanel</code> and adds the apporpriate panel
+	 	* Creates a new <code>JPanel</code> and adds the appropriate panel
 	 	* to it. Also creates a new <code>JFrame</code> and add the 
 	 	* <code>JPanel</code> to it.
 	 	*/		
@@ -126,7 +131,7 @@ package pizza_palace;
 	 		frame.setLocation (100, 100);
 	 		frame.setTitle (title);					
 			frame.pack();
-			frame.show();		
+			frame.setVisible(true);		
 	 	}
 	 }
 }

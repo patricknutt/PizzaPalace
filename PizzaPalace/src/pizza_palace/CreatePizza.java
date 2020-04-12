@@ -12,7 +12,7 @@ import java.io.*;
 public class CreatePizza 
 {
 	/**
-	 * Creates, instatiates, and serializes an array of {@link Consuambable} 
+	 * Creates, instantiates, and serializes an array of {@link Consumable} 
 	 * objects.
 	 */
 	public static void newPizza()
@@ -34,17 +34,18 @@ public class CreatePizza
 		ingredients[12] = new Jalepeno();
 		ingredients[13] = new Mushroom();
 		ingredients[14] = new RedPepper();
-		ingredients[15] = new Pinapple();
+		ingredients[15] = new Pineapple();
 		
 		try
 		{	
-			FileOutputStream file = new FileOutputStream ("Orders\\ingredients.dat");
+			FileOutputStream file = new FileOutputStream ("./src/res/Orders/ingredients.dat");
 			ObjectOutputStream outStream = new ObjectOutputStream (file);
 			
 			for (int scan = 0; scan < ingredients.length; scan++)
 			{
 				outStream.writeObject (ingredients[scan]);
 			}
+			outStream.close();
 		}
 		catch (IOException exception) {}		
 	}

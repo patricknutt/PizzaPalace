@@ -12,6 +12,11 @@ import java.awt.*;
 public class ReportPanel extends JPanel
 {
 	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 996990337542583355L;
+
+	/**
 	 * Column headings
 	 */
 	private String currUsageLabel, prevStockLabel, currStockLabel;
@@ -57,14 +62,13 @@ public class ReportPanel extends JPanel
 		display.setText (currUsageLabel + prevStockLabel + currStockLabel);
 		display.append ("Item\tUsage\tStock\tStock\n\n");
 
-		itemList = new Consumable [stocker.INGREDIENTS];
+		itemList = new Consumable [StockLevels.INGREDIENTS];
 		itemList = stocker.getList();
 
-		item = new String [stocker.INGREDIENTS][4];
-		JLabel[] list = new JLabel [stocker.INGREDIENTS];
+		item = new String [StockLevels.INGREDIENTS][4];
 		
 		// Fill report
-		for (int count = 0; count < stocker.INGREDIENTS; count++)
+		for (int count = 0; count < StockLevels.INGREDIENTS; count++)
 		{
 			display.append (itemList[count].toString() + "\t");
 			for (int inner = 1; inner < 4; inner++)

@@ -3,8 +3,6 @@ package pizza_palace;
  * Flour.java		07/12/2003
  * Author: Patrick Nutt
  */
-import javax.swing.*;
-import java.awt.*;
 import java.io.Serializable;
  
 /**
@@ -13,6 +11,11 @@ import java.io.Serializable;
  public class Flour extends Consumable implements Serializable
  {
   	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -7979200949010584770L;
+
+	/**
  	 * Creates a new <code>Flour</code> object and sets its constant
  	 * values
  	 *

@@ -3,8 +3,6 @@ package pizza_palace;
  * Sausage.java		07/12/2003
  * Author: Patrick Nutt
  */
-import javax.swing.*;
-import java.awt.*;
 import java.io.Serializable;
  
 /**
@@ -13,6 +11,11 @@ import java.io.Serializable;
  public class Sausage extends Consumable implements Serializable
  { 	
  	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 308316148266929597L;
+
+	/**
  	 * Creates a new <code>Sausage</code> object and sets its constant
  	 * values
  	 *

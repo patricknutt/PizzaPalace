@@ -15,6 +15,11 @@ import java.text.DecimalFormat;
 public class ShoppingListPanel extends JPanel
 {
 	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -9177251175186817464L;
+
+	/**
 	 * Array of <@link Consumable> objects
 	 */
 	private Consumable[] itemList;
@@ -58,11 +63,11 @@ public class ShoppingListPanel extends JPanel
 	/**
 	 * <@link Box> object to contain report
 	 */
-	private Box listBox, spacerBox;
+	private Box listBox;
 	
 	/**
 	 * Creates and displays the shopping list.
-	 * Alos outputs results to a file.
+	 * Also outputs results to a file.
 	 */
 	public ShoppingListPanel() 
 	{
@@ -71,13 +76,12 @@ public class ShoppingListPanel extends JPanel
 		setLayout (new BoxLayout (this, BoxLayout.Y_AXIS));
 	
 		listBox = new Box (BoxLayout.X_AXIS);
-		spacerBox = new Box (BoxLayout.X_AXIS);
 		
 		listItem = new JTextArea();
 		listAmt = new JTextArea();
 		fmt = new DecimalFormat ("0.00");
 		fileName = new String ("shoplist.dat");
-		itemList = new Consumable [stocker.INGREDIENTS];
+		itemList = new Consumable [StockLevels.INGREDIENTS];
 		stocker = new StockLevels();		
 		
 		listBox.setLocation (100, 0);
@@ -100,7 +104,7 @@ public class ShoppingListPanel extends JPanel
 			PrintWriter outFile = new PrintWriter (bw);
 			
 			shoppingNeeded = false;
-			for (int count = 0; count < stocker.INGREDIENTS; count++)
+			for (int count = 0; count < StockLevels.INGREDIENTS; count++)
 			{
 				amount = itemList[count].getAmount();
 				maxAmount = itemList[count].getMaxAmount();
@@ -135,7 +139,7 @@ public class ShoppingListPanel extends JPanel
 		
 		add (listBox);
 
-		// Display mesage box if no items need to be ordered
+		// Display message box if no items need to be ordered
 		if (!shoppingNeeded)
 		{
 			JOptionPane.showMessageDialog (null, "No shopping is needed" 

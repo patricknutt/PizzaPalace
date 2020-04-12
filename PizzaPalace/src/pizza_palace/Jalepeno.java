@@ -3,8 +3,6 @@ package pizza_palace;
  * Jalepeno.java		07/12/2003
  * Author: Patrick Nutt
  */
-import javax.swing.*;
-import java.awt.*;
 import java.io.Serializable;
  
 /**
@@ -13,6 +11,11 @@ import java.io.Serializable;
  public class Jalepeno extends Consumable implements Serializable
  {
  	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -2164403017808751576L;
+
+	/**
  	 * Creates a new <code>Jalepeno</code> object and sets its constant
  	 * values
  	 *

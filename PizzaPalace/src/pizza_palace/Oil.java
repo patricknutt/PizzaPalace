@@ -3,8 +3,6 @@ package pizza_palace;
  * Oil.java		07/12/2003
  * Author: Patrick Nutt
  */
-import javax.swing.*;
-import java.awt.*;
 import java.io.Serializable;
  
 /**
@@ -13,6 +11,11 @@ import java.io.Serializable;
  public class Oil extends Consumable implements Serializable
  { 	
  	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 4338806532819669255L;
+
+	/**
  	 * Creates a new <code>Oil</code> object and sets its constant
  	 * values
  	 *

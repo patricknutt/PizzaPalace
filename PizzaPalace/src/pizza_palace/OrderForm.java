@@ -7,7 +7,6 @@ import java.awt.*;
 import java.awt.event.*;
 
 import javax.swing.*;
-import javax.swing.event.*;
 
 import java.io.*;
 
@@ -22,6 +21,11 @@ public class OrderForm extends JPanel
 {
 
  	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 4751218405335989230L;
+
+	/**
  	 * Font for company name
  	 */
 	private final int NAME_SIZE = 56;	

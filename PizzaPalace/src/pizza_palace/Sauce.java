@@ -3,8 +3,6 @@ package pizza_palace;
  * Sauce.java		07/12/2003
  * Author: Patrick Nutt
  */
-import javax.swing.*;
-import java.awt.*;
 import java.io.Serializable;
  
 /**
@@ -13,6 +11,11 @@ import java.io.Serializable;
  public class Sauce extends Consumable implements Serializable
  { 	
  	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -4198954183732492936L;
+
+	/**
  	 * Creates a new <code>Sauce</code> object and sets its constant
  	 * values
  	 *

@@ -16,6 +16,11 @@ import java.awt.*;
 public class ChartPanel extends JPanel
 {
 	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -2433505358149383420L;
+
+	/**
 	 * Constant width of each bar
 	 */
 	private final int WIDTH = 30;

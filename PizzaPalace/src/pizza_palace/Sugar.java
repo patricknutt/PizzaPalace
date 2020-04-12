@@ -3,8 +3,6 @@ package pizza_palace;
  * Sugar.java		07/12/2003
  * Author: Patrick Nutt
  */
-import javax.swing.*;
-import java.awt.*;
 import java.io.Serializable;
  
 /**
@@ -13,6 +11,11 @@ import java.io.Serializable;
  public class Sugar extends Consumable implements Serializable
  { 	
  	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -4783760812991542556L;
+
+	/**
  	 * Creates a new <code>Sugar</code> object and sets its constant
  	 * values
  	 *

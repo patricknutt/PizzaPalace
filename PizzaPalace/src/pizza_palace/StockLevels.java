@@ -11,7 +11,7 @@ import java.util.StringTokenizer;
 
 /**
  * Adjusts the ingredient amounts for each item of an array of 
- * <@link Consumable> objects. This is accomplished by first deserializing
+ * <@link Consumable> objects. This is accomplished by first de-serializing
  * the Consumable objects. The current days usage file is opened and the size
  * and toppings are determined. This is then used to determine which Consumable
  * needs to have its current amount adjusted. Each object is adjusted by calling
@@ -71,8 +71,8 @@ public class StockLevels
 	private void updateUsedStock () 
 	{
 					
-			serialFileName = "Orders\\ingredients.dat";
-			inFileName = "Orders\\"; 
+			serialFileName = "./src/res/Orders/ingredients.dat";
+			inFileName = "./src/res/Orders/"; 
 			inFileName += rightNow.get (Calendar.MONTH) + 1;
 			inFileName += rightNow.get (Calendar.DAY_OF_MONTH);					
 			inFileName += rightNow.get (Calendar.YEAR);	
@@ -179,7 +179,7 @@ public class StockLevels
 			{
 				outStream.writeObject (ingredients[scan]);
 			}
-			
+			outStream.close();
 		}
 		catch (IOException exception) {}	
 		catch (ClassNotFoundException exception) {}

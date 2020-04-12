@@ -14,6 +14,10 @@ import javax.swing.*;
  **/ 
 public class PizzaPalacePanel extends JPanel
 {
+		/**
+	 * 
+	 */
+	private static final long serialVersionUID = -431961904375497080L;
 		private JButton customer, manager, newStock;
 		private ButtonListener buttonListener = new ButtonListener();
 	

@@ -3,8 +3,6 @@ package pizza_palace;
  * RedPepper.java		07/12/2003
  * Author: Patrick Nutt
  */
-import javax.swing.*;
-import java.awt.*;
 import java.io.Serializable;
  
 /**
@@ -13,6 +11,11 @@ import java.io.Serializable;
  public class RedPepper extends Consumable implements Serializable
  { 	
  	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -616990647352471546L;
+
+	/**
  	 * Creates a new <code>RedPepper</code> object and sets its constant
  	 * values
  	 *

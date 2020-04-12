@@ -17,6 +17,11 @@ import java.text.DecimalFormat;
 */
 public class Consumable implements Serializable
 {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 6679516861214075887L;
+
 	private transient static int counter = 1;
 	
 	/**

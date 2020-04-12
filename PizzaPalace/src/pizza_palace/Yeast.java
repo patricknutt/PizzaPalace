@@ -3,8 +3,6 @@ package pizza_palace;
  * Yeast.java		07/12/2003
  * Author: Patrick Nutt
  */
-import javax.swing.*;
-import java.awt.*;
 import java.io.Serializable;
  
 /**
@@ -13,6 +11,11 @@ import java.io.Serializable;
  public class Yeast extends Consumable implements Serializable
  { 	
  	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 926484696283365249L;
+
+	/**
  	 * Creates a new <code>Yeast</code> object and sets its constant
  	 * values
  	 *

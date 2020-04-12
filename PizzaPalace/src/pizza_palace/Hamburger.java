@@ -3,8 +3,6 @@ package pizza_palace;
  * Hamburger.java		07/12/2003
  * Author: Patrick Nutt
  */
-import javax.swing.*;
-import java.awt.*;
 import java.io.Serializable;
  
 /**
@@ -13,6 +11,11 @@ import java.io.Serializable;
  public class Hamburger extends Consumable implements Serializable
  {
   	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 5793017835773440912L;
+
+	/**
  	 * Creates a new <code>Hamburger</code> object and sets its constant
  	 * values
  	 *

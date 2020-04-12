@@ -3,8 +3,6 @@ package pizza_palace;
  * Cheese.java		07/12/2003
  * Author: Patrick Nutt
  */
-import javax.swing.*;
-import java.awt.*;
 import java.io.Serializable;
  
 /**
@@ -13,6 +11,11 @@ import java.io.Serializable;
  public class Cheese extends Consumable implements Serializable
  {
  	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 8865432800060321455L;
+
+	/**
  	 * Creates a new <code>Cheese</code> object and sets its constant
  	 * values
  	 *

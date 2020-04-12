@@ -15,17 +15,17 @@ public class PizzaPalace
 	/**
 	 * Defines Pizza Palace Yellow
 	 */
-	public static final Color COLOR_MAIN = new Color (242, 240, 83);	// yellow
+	public static final Color COLOR_MAIN = new Color (242, 240, 83);  // yellow
 	
 	/**
 	 * Defines Pizza Palace Green
 	 */
-	public static final Color COLOR_SECONDARY = new Color (27, 117, 78);	// green
+	public static final Color COLOR_SECONDARY = new Color (27, 117, 78);  // green
 
 	/**
 	 * Represents Pizza Palace Red
 	 */
-	public static final Color COLOR_NAME = new Color (251, 50, 69);	// red
+	public static final Color COLOR_NAME = new Color (251, 50, 69);  // red
 	
 	/**
 	 * Display option frame

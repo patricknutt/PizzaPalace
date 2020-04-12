@@ -13,7 +13,11 @@ package pizza_palace;
   */
  public class MainPanel extends JPanel
  {
- 	private JLabel lineOne;
+ 	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 989262487566140841L;
+	private JLabel lineOne;
  	private JLabel lineTwo;
  	private JLabel lineThree;
  	private JLabel lineFour;

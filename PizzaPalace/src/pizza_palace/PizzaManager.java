@@ -34,6 +34,6 @@ public class PizzaManager
 		
 		frame.getContentPane().add (tabPane);
 		frame.pack();
-		frame.show();
+		frame.setVisible(true);
 	}
 }

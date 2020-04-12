@@ -3,8 +3,6 @@ package pizza_palace;
  * Onion.java		07/12/2003
  * Author: Patrick Nutt
  */
-import javax.swing.*;
-import java.awt.*;
 import java.io.Serializable;
  
 /**
@@ -13,6 +11,11 @@ import java.io.Serializable;
  public class Onion extends Consumable implements Serializable
  { 	
  	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -33498037019479299L;
+
+	/**
  	 * Creates a new <code>Onion</code> object and sets its constant
  	 * values
  	 *

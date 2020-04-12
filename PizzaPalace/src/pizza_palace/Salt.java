@@ -3,8 +3,6 @@ package pizza_palace;
  * Salt.java		07/12/2003
  * Author: Patrick Nutt
  */
-import javax.swing.*;
-import java.awt.*;
 import java.io.Serializable;
  
 /**
@@ -13,6 +11,11 @@ import java.io.Serializable;
  public class Salt extends Consumable implements Serializable
  { 	
  	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 5029676092040144379L;
+
+	/**
  	 * Creates a new <code>Salt</code> object and sets its constant
  	 * values
  	 *
