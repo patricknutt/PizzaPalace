@@ -80,7 +80,7 @@ public class ShoppingListPanel extends JPanel
 		listItem = new JTextArea();
 		listAmt = new JTextArea();
 		fmt = new DecimalFormat ("0.00");
-		fileName = new String ("shoplist.dat");
+		fileName = new String ("./src/res/Orders/shoplist.dat");
 		itemList = new Consumable [StockLevels.INGREDIENTS];
 		stocker = new StockLevels();		
 		
