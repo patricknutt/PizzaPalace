@@ -3,8 +3,10 @@ package pizza_palace;
  * ChartPanel.java		7/12/2003
  * Author: Patrick Nutt
  */
-import javax.swing.*;
-import java.awt.*;
+import javax.swing.JPanel;
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.Graphics;
 /**
  * This class creates a bar chart representing the maximum, current, and 
  * minimum level of each product of an array of <@link Consumable> objects.

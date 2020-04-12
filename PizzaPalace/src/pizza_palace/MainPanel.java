@@ -3,8 +3,10 @@ package pizza_palace;
  * MainPanel.java	07/12/2003
  * Author: Patrick Nutt
  */
- import javax.swing.*;
- import java.awt.*;
+ import javax.swing.JPanel;
+ import javax.swing.JLabel;
+ import java.awt.FlowLayout;
+ import java.awt.Font;
  
  /**
   *	This class represents an introduction panel to the 

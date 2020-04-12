@@ -3,9 +3,17 @@ package pizza_palace;
  * ShoppingListPanel.java
  * Author: Patrick Nutt
  */
-import javax.swing.*;
-import java.awt.*;
-import java.io.*;
+import javax.swing.Box;
+import javax.swing.BoxLayout;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.JTextArea;
+import java.awt.Color;
+import java.awt.Dimension;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
 import java.text.DecimalFormat;
 
 /**

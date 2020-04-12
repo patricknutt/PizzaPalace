@@ -1,10 +1,13 @@
 package pizza_palace;
+import javax.swing.BoxLayout;
 /**
  * ReportPanel.java		7/20/2003
  * Author: Patrick Nutt
  */
-import javax.swing.*;
-import java.awt.*;
+import javax.swing.JPanel;
+import javax.swing.JTextArea;
+
+import java.awt.Color;
 
 /**
  * Creates and displays an inventory report

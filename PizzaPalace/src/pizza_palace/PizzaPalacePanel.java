@@ -4,8 +4,10 @@ package pizza_palace;
  * PizzaPalacePanel.java		7/20/2003
  * Author: Patrick Nutt
  */
-import java.awt.event.*;
-import javax.swing.*;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+import javax.swing.JPanel;
+import javax.swing.JButton;
 
 /**
  * Main control panel for the Pizza Palace program. It allows the user 

@@ -3,7 +3,8 @@ package pizza_palace;
  * PizzaManager.java	07/11/2003
  * Author: Patrick Nutt
  */
-import javax.swing.*;
+import javax.swing.JFrame;
+import javax.swing.JTabbedPane;
  
 /**
 * This class creates a tabbed pane with three panes. The first

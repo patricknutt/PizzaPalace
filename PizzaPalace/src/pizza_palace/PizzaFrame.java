@@ -3,7 +3,7 @@ package pizza_palace;
  * PizzaFrame.java		7/20/2003
  * Author: Patrick Nutt
  */
-import javax.swing.*;
+import javax.swing.JFrame;
 
 /**
  * Frame that contains OrderForm panel

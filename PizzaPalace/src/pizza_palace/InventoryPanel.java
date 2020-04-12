@@ -3,9 +3,14 @@ package pizza_palace;
  * InventoryPanel.java		07/11/2003
  * Author: Patrick Nutt
  */
- import java.awt.*;
- import java.awt.event.*;
- import javax.swing.*;
+ import java.awt.Dimension;
+ import java.awt.event.ActionListener;
+ import java.awt.event.ActionEvent;
+ import javax.swing.Box;
+ import javax.swing.BoxLayout;
+ import javax.swing.JPanel;
+ import javax.swing.JButton;
+ import javax.swing.JLabel;
  
  /**
   * This class represents an inventory report selection GUI
@@ -37,7 +42,7 @@ package pizza_palace;
  	private String invReport, stockChart, shoppingList;
  	
  	/**
- 	 * Lable for heading
+ 	 * Label for heading
  	 */
  	private JLabel header;
  	
