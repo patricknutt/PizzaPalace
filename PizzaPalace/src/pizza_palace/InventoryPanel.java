@@ -4,11 +4,8 @@ package pizza_palace;
  * Author: Patrick Nutt
  */
  import java.awt.*;
- import java.awt.BorderLayout;
  import java.awt.event.*;
- import java.awt.Color;
  import javax.swing.*;
- import java.io.*; 
  
  /**
   * This class represents an inventory report selection GUI

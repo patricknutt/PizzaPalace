@@ -5,8 +5,6 @@ package pizza_palace;
  */
 import java.io.*;
 import java.util.Calendar;
-import javax.swing.JOptionPane;
-import javax.accessibility.*;
 import java.util.StringTokenizer;
 
 /**
@@ -106,7 +104,10 @@ public class StockLevels
 				name = token.nextToken();
 				address = token.nextToken();
 				strSize = token.nextToken();
-			
+				
+				System.out.println(name);
+				System.out.println(address);
+				
 				// Translate size string into an integer						
 				if (strSize.trim().equals ("10 inch Pizza"))
 					size = Consumable.SMALL;
@@ -117,9 +118,9 @@ public class StockLevels
 				
 				// Resets previous amount used to 0	using the open method of 
 				// the Consumable class
-				boolean openClass;
-				for (int scan = 0; scan < INGREDIENTS; scan++)
-					openClass = ingredients[scan].open();
+//				boolean openClass;
+//				for (int scan = 0; scan < INGREDIENTS; scan++)
+//					openClass = ingredients[scan].open();
 					
 				// Count the number of toppings
 				int count = 0;

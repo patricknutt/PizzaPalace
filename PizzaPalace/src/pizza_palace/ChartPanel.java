@@ -4,10 +4,9 @@ package pizza_palace;
  * Author: Patrick Nutt
  */
 import javax.swing.*;
-import java.util.*;
 import java.awt.*;
 /**
- * This class creates a bar chart representing the maximu, current, and 
+ * This class creates a bar chart representing the maximum, current, and 
  * minimum level of each product of an array of <@link Consumable> objects.
  * The array is obtained through a <@link StockLevels> class. Three loops are 
  * used, one for each level indicator. A legend is also created and each bar is
@@ -26,7 +25,7 @@ public class ChartPanel extends JPanel
 	private final int WIDTH = 30;
 	
 	/**
-	 * Constant used to specify the height boundry for the graphical 
+	 * Constant used to specify the height boundary for the graphical 
 	 * representation of the bar chart
 	 */
 	private final int MAX_HEIGHT = 400; 
@@ -40,7 +39,7 @@ public class ChartPanel extends JPanel
 	 * Constants defining the x, y, bullet size, and blank space
 	 * values for the chart legend
 	 */
-	private final int LEG_X = 457, LEG_Y = 10, BULLET = 10, LEG_GAP = 5;
+	private final int LEG_X = 457, LEG_Y = 10, BULLET = 10;
 	
 	/**
 	 * Constants defining the size of this ChartPanel
@@ -54,7 +53,7 @@ public class ChartPanel extends JPanel
 	private int xVal, yVal;
 	
 	/**
-	 * The height value for each bar. Determined dyanamically from each
+	 * The height value for each bar. Determined dynamically from each
 	 * item of the Consumable array
 	 */
 	private int height;
@@ -62,7 +61,7 @@ public class ChartPanel extends JPanel
 	/**
 	 * Used to dynamically determine the height of each item. The min 
 	 * variable is assigned a value from a Consumable object. This value is 
-	 * then manipulated to acheive the right visual effect
+	 * then manipulated to achieve the right visual effect
 	 */
 	private double min;
 	
@@ -87,17 +86,17 @@ public class ChartPanel extends JPanel
 		setBackground (Color.black);
 		setPreferredSize (new Dimension (PANEL_WIDTH, PANEL_HEIGHT));
 		
-		itemList = new Consumable [stocker.INGREDIENTS];
+		itemList = new Consumable [StockLevels.INGREDIENTS];
 		stocker = new StockLevels();
 		itemList = stocker.getList();				
 	}
 	
 	/**
 	 * Paints this ChartPanel to the screen. Location and size values are 
-	 * determined dynamically. A seperate iteration is used to create each of 
-	 * three bar levels, minimum, maximum, and curent. Also creates legend for
+	 * determined dynamically. A separate iteration is used to create each of 
+	 * three bar levels, minimum, maximum, and current. Also creates legend for
 	 * the chart. The values obtained from the <@link Consumable> objects are 
-	 * mainpulated in order to provide a graphically pleasing representation 
+	 * manipulated in order to provide a graphically pleasing representation 
 	 * of the bar chart. It ensures that the objects with large amounts and
 	 * small amount can be seen at the same time on the screen
 	 */
@@ -121,7 +120,7 @@ public class ChartPanel extends JPanel
 		// Maximum level bar	
 		page.setColor (Color.cyan);	
 		xVal = GAP;		
-		for (int count = 0; count < stocker.INGREDIENTS; count++)
+		for (int count = 0; count < StockLevels.INGREDIENTS; count++)
 		{
 			min = itemList[count].getMaxAmount();
 			if (min > 1500)
@@ -149,7 +148,7 @@ public class ChartPanel extends JPanel
 		// Current level bar
 		page.setColor (Color.yellow);
 		xVal = GAP;
-		for (int count = 0; count < stocker.INGREDIENTS; count++)
+		for (int count = 0; count < StockLevels.INGREDIENTS; count++)
 		{
 			min = itemList[count].getAmount();
 			if (min > 1500)
@@ -169,7 +168,7 @@ public class ChartPanel extends JPanel
 		// Minimum level bar
 		page.setColor (Color.blue);
 		xVal = GAP;		
-		for (int count = 0; count < stocker.INGREDIENTS; count++)
+		for (int count = 0; count < StockLevels.INGREDIENTS; count++)
 		{
 			min = itemList[count].getMinAmount();
 			if (min > 1500)
